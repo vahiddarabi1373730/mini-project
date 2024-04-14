@@ -1,0 +1,16 @@
+{
+  "units": [
+    {"id":2,"name":"شرکت تبریز","status":"active","dateEstablishment":"1402"},
+    {"id":1,"name":"شرکت تهران","status":"deActive","dateEstablishment":"1401"},
+    {"id":3,"name":"شرکت اهواز","status":"deActive","dateEstablishment":"1403"},
+    {"id":4,"name":"شرکت مازندران","status":"active","dateEstablishment":"1400"}
+  ],
+  "employees": [
+    {"id":2,"name":"وحید دارابی","gender":"men","education":"diploma","unitId": "1","mobile":"0912"},
+    {"id":1,"name":"مریم حسنی","gender":"fame","education":"master","unitId": "2","mobile":"0910"},
+    {"id":3,"name":"حسین روشن","gender":"men","education":"senior","unitId": "3","mobile":"0911"},
+    {"id":4,"name":"اعظم روشنی","gender":"fame","education":"doctorate","unitId": "4","mobile":"0913"}
+  ]
+}
+
+

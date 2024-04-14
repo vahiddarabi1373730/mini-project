@@ -1,0 +1,8 @@
+<nav mat-tab-nav-bar [backgroundColor]="background" [tabPanel]="tabPanel">
+
+  <ng-container *ngFor="let tab of tabs">
+    <a mat-tab-link (click)="onClick(tab)"
+       [active]="activeLink == tab"> {{tab.value}}</a>
+  </ng-container>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

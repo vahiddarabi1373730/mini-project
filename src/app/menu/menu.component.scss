@@ -1,0 +1,34 @@
+:host{
+  display: block;
+  height: 45px;
+}
+a {
+  text-decoration: navajowhite;
+  color: #545454;
+  height: 24px;
+  font-size: 10px;
+  font-weight: 400;
+  min-width: 0;
+  padding: 0 8px;
+
+  &.mat-tab-label-active {
+    color: #45B653;
+    font-size: 10px;
+    font-weight: 900;
+  }
+}
+
+:host ::ng-deep {
+  .mat-tab-links {
+    display: flex;
+    justify-content: start;
+    column-gap: 14px;
+  }
+
+  .mat-ink-bar {
+    background-color: #45B653 !important;
+    height: 6px;
+    border-radius: 4px 4px 0px 0px;
+
+  }
+}

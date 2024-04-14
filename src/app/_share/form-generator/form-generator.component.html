@@ -1,0 +1,23 @@
+<div [formGroup]="formGroup" class="o-container">
+  <ng-container *ngFor="let field of config.fields">
+    <ng-container [ngSwitch]="field.type">
+      <ng-container *ngSwitchCase="'input'">
+        <app-input [config]="field" [formGroup]="formGroup"></app-input>
+      </ng-container>
+      <ng-container *ngSwitchCase="'select'">
+        <app-select [config]="field" [formGroup]="formGroup"></app-select>
+      </ng-container>
+      <ng-container *ngSwitchCase="'radio'">
+        <app-radio [config]="field" [formGroup]="formGroup"></app-radio>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</div>
+
+<button *ngIf="config.hasButton"
+        [disabled]="formGroup.invalid"
+        (click)="onSubmit()"
+        mat-button
+        mat-raised-button
+        color="primary"
+>{{config?.titleButton}}</button>

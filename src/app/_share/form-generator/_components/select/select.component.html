@@ -1,0 +1,11 @@
+<span class="c-label">
+  <ng-container *ngFor="let validation of config.validation">
+  <span class="e-required" *ngIf="validation===Validators.required">*</span>
+  </ng-container>
+  <span class="e-label">{{config.label}}</span>
+</span>
+<mat-form-field appearance="outline" class="mat-form-field">
+  <mat-select [formControl]="formControl" >
+    <mat-option *ngFor="let option of config.options" [value]="option.key">{{option.value}}</mat-option>
+  </mat-select>
+</mat-form-field>
